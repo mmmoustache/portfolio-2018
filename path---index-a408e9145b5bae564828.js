@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{248:function(e,t){e.exports={data:{allProjectsJson:{edges:[{node:{items:[{title:"Project 1",id:1,description:"This is my first project",technologies:["React","Redux","SCSS","Webpack"],image_url:"http://placecage.com/300/300"},{title:"Project 2",id:2,description:"This is my second project",technologies:["Gatsby","React","Styled Components","GraphQL"],image_url:"http://placecage.com/300/300"}]}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-a408e9145b5bae564828.js.map
