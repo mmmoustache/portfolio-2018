@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Project 1",
+      "description": "This is my first project",
+      "image_url": "http://placecage.com/300/300",
+      "technologies": [
+        "React",
+        "Redux",
+        "SCSS",
+        "Webpack"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Project 2",
+      "description": "This is my second project",
+      "image_url": "http://placecage.com/300/300",
+      "technologies": [
+        "Gatsby",
+        "React",
+        "Styled Components",
+        "GraphQL"
+      ]
+    }
+  ]
+}
