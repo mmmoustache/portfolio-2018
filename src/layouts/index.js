@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from '../components/Header';
+import '../styles/fonts.css';
 import '../styles/global.css';
 
 const Layout = ({ children, data }) => (
@@ -12,7 +13,7 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: data.site.siteMetadata.description },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
     <main>
       {children()}
     </main>

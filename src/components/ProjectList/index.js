@@ -20,7 +20,9 @@ const ProjectList = ({ items }) => {
               description={e.description}
               image_url={e.image_url}
               technologies={e.technologies}
-              />
+              url={e.url}
+              repo={e.repo}
+            />
           </li>
         )
       }

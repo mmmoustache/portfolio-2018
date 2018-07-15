@@ -2,19 +2,21 @@
   "items": [
     {
       "id": 1,
-      "title": "Project 1",
-      "description": "This is my first project",
+      "title": "Cityboard",
+      "description": "Cityboard is a React application that searches local restaurants, arts and activities using the Yelp Businesses API and Google Firebase.",
       "image_url": "http://placecage.com/300/300",
       "technologies": [
         "React",
         "Redux",
         "SCSS",
         "Webpack"
-      ]
+      ],
+      "url": "http://www.google.com",
+      "repo": "https://github.com/mmmoustache/cityboard"
     },
     {
       "id": 2,
-      "title": "Project 2",
+      "title": "World Cup Se",
       "description": "This is my second project",
       "image_url": "http://placecage.com/300/300",
       "technologies": [
@@ -22,7 +24,9 @@
         "React",
         "Styled Components",
         "GraphQL"
-      ]
+      ],
+      "url": "http://www.google.com",
+      "repo": "http://www.github.com"
     }
   ]
 }
