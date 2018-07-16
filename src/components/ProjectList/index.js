@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import Card from "../ProjectCard";
+import TrackVisibility from 'react-on-screen';
 
 const Wrapper = styled.ul`
   list-style: none;
@@ -9,20 +10,25 @@ const Wrapper = styled.ul`
 `;
 
 const ProjectList = ({ items }) => {
-  console.log(items);
   return (
-    <Wrapper>
+    <Wrapper id="work">
       { 
-        items && items.map(e => 
+        items && items.map((e, i) => 
           <li key={e.id}>
-            <Card
-              title={e.title}
-              description={e.description}
-              image_url={e.image_url}
-              technologies={e.technologies}
-              url={e.url}
-              repo={e.repo}
-            />
+            <TrackVisibility offset={-300} partialVisibility>
+              {({ isVisible }) => 
+                <Card
+                  title={e.title}
+                  description={e.description}
+                  image_url={e.image_url}
+                  technologies={e.technologies}
+                  url={e.url}
+                  repo={e.repo}
+                  isVisible={isVisible}
+                  isOdd={i % 2 === 0}
+                />
+              }   
+            </TrackVisibility>            
           </li>
         )
       }

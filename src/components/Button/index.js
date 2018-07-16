@@ -1,18 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
+import H3 from "../H3";
 
 const Wrapper = styled.a`
   background: #fff;
-  border: 3px solid red;
+  border: 3px solid black;
+  color: black;
   display: block;
+  min-width: 200px;
   overflow: hidden;
-  padding: 20px;
+  padding: 30px;
   position: relative;
   text-align: center;
+  text-decoration: none;
 
   &::after,
   &::before {
-    background: green;
+    background: #F25F5C;
     content: '';
     display: block;
     height: 100%;
@@ -25,19 +29,19 @@ const Wrapper = styled.a`
   }
 
   &::before {
-    background: blue;
+    background: #FCA311;
     transition-delay: 0.1s;
   }
 
   &:focus,
   &:hover {
-    background: red;
+    background: black;
+    color: white;
 
     &::after,
     &::before {
       left: 120%;
     }
-    
   }
 `;
 
@@ -47,7 +51,7 @@ const Inner = styled.span`
 `;
 
 const Button = ({ href, children }) => 
-  <Wrapper href={href}><Inner>{children}</Inner></Wrapper>
+  <Wrapper href={href}><Inner><H3 noMargin>{children}</H3></Inner></Wrapper>
 ;
 
 export default Button;

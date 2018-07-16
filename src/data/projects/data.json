@@ -16,8 +16,8 @@
     },
     {
       "id": 2,
-      "title": "World Cup Se",
-      "description": "This is my second project",
+      "title": "React Starter Boilerplate",
+      "description": "This is an isomorphic, React boilerplate using Redux, Webpack, SCSS, ",
       "image_url": "http://placecage.com/300/300",
       "technologies": [
         "Gatsby",

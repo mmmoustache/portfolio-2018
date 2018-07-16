@@ -27,9 +27,9 @@ class IndexPage extends React.Component {
     const { loaded } = this.state;
     return (
       <div>
-        <Intro loaded={loaded} />
+        <TrackVisibility partialVisibility>{({ isVisible }) => <Intro loaded={loaded} isVisible={isVisible} />}</TrackVisibility>
         <ProjectList items={data.allProjectsJson.edges[0].node.items} />
-        <TrackVisibility offset={-300} partialVisibility once>{({ isVisible }) => <About isVisible={isVisible} />}</TrackVisibility>
+        <TrackVisibility offset={-300} partialVisibility>{({ isVisible }) => <About isVisible={isVisible} />}</TrackVisibility>
       </div>
     );
   }

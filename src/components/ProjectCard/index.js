@@ -6,10 +6,89 @@ import H3 from "../H3";
 import Text from "../Text";
 
 const Wrapper = styled.div`
-  background-position: center;
-  background-size: cover;
+  background: black;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  transition-delay: 1s;
+  transition: background 0.2s ease-in-out;
+  
+  ${
+    props => props.isVisible && `
+      background: #F25F5C;
+    `
+  }
 
-  /* background-image: ${ props => props.image && `url(${props.image})` };*/
+  ${
+    props => props.isVisible && props.isOdd && `
+      background: #FCA311;
+    `
+  }
+`;
+
+const ShapeWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+  transition: 0.5s opacity ease-in-out;
+  transition-delay: 0.5s;
+
+  ${
+    props => props.isVisible && `
+      opacity: 1;
+    `
+  }
+`;
+
+const Shape1 = styled.div`
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  animation: polygons2 30s alternate infinite;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  opacity: 0.8;
+
+  @keyframes polygons2 {
+    25% {
+      clip-path: polygon(8% 1%, 100% 8%, 91% 100%, 0 94%);
+    }
+    50% {
+      clip-path: polygon(2% 0, 85% 7%, 90% 95%, 8% 89%);
+    }
+    75% {
+      clip-path: polygon(8% 10%, 97% 2%, 100% 90%, 1% 100%);
+    }
+  }
+`;
+
+const Shape2 = styled.div`
+  background: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 380px;
+  height: 380px;
+  animation: polygons3 28s reverse infinite;
+  clip-path: polygon(2% 0, 85% 7%, 90% 95%, 8% 89%);
+  opacity: 0.2;
+
+  @keyframes polygons3 {
+    25% {
+      clip-path: polygon(8% 1%, 100% 8%, 91% 100%, 0 94%);
+    }
+    50% {
+      clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    }
+    75% {
+      clip-path: polygon(8% 10%, 97% 2%, 100% 90%, 1% 100%);
+    }
+  }
 `;
 
 const Inner = styled.div`
@@ -28,22 +107,34 @@ const TechList = styled.ul`
   padding: 0;
 `;
 
+const Buttons = styled.div`
+  display: flex;
+  margin-top: 30px;
+
+  & > *:last-child {
+    margin-left: 20px;
+  }
+`;
+
 const Figure = styled.div`
   width: 40%;
 `;
 
 const TechItem = styled.li`
   display: inline-block;
+  margin-right: 15px;
 `;
 
 const Content = styled.div`
-  background: #fff;
   display: block;
   position: relative;
-  width: 60%;
+  width: 110%;
+  opacity: 0;
+  transition: 0.5s opacity ease-in-out;
+  transition-delay: 0.25s;
 
   &::after {
-    border: 10px solid red;
+    border: 10px solid black;
     content: '';
     height: 100%;
     width: 60%;
@@ -52,23 +143,51 @@ const Content = styled.div`
     position: absolute;
     z-index: -1;
   }
+
+  ${
+    props => props.isVisible && `
+      opacity: 1;
+    `
+  }
 `;
 
-const ProjectCard = ({ title, description, image_url, technologies, url, repo }) => 
-  <Wrapper image={image_url}>
-    {
-      technologies &&
-        <TechList>
-          { technologies.map(e => <TechItem key={e}><H3>{e}</H3></TechItem>) }
-        </TechList>
-    }
+const ContentInner = styled.div`
+  mix-blend-mode: difference;
+  color: white;
+`;
 
-    <H2>{title}</H2>
-    <Text>
-      <p>{description}</p>
-    </Text>
-    { url && <Button href={url}>View Site</Button> }
-    { repo && <Button href={repo}>Code</Button> }
+const Heading = H2.extend`
+  width: 70%;
+`;
+
+const ProjectCard = ({ title, description, image_url, technologies, url, repo, isVisible, isOdd }) => 
+  <Wrapper isVisible={isVisible} image={image_url} isOdd={isOdd}>
+    <Inner>
+      <Figure>
+        <ShapeWrapper isVisible={isVisible}>
+          <Shape1 />
+          <Shape2 />
+        </ShapeWrapper>
+      </Figure>
+      <Content isVisible={isVisible}>
+        <ContentInner>
+          {
+            technologies &&
+              <TechList>
+                { technologies.map(e => <TechItem key={e}><H3>{e}</H3></TechItem>) }
+              </TechList>
+          }
+          <Heading>{title}</Heading>
+          <Text>
+            <p>{description}</p>
+          </Text>
+        </ContentInner>
+        <Buttons>
+          { url && <Button href={url}>View Site</Button> }
+          { repo && <Button href={repo}>Code</Button> }
+        </Buttons>
+      </Content>
+    </Inner>
   </Wrapper>
 ;
 

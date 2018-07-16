@@ -31,7 +31,7 @@ const Content = styled.div`
 const Inner = styled.div`
   margin: 0 auto;
   max-width: 1200px;
-  padding: 60px 20px;
+  padding: 80px 20px;
   
   @media ${Breakpoints.medium} {
     align-items: center;
@@ -75,7 +75,7 @@ const Avatar = styled.div`
 `;
 
 const About = ({ isVisible }) => 
-  <Wrapper>
+  <Wrapper id="about">
     <Inner>
       <Avatar isVisible={isVisible}>
         <img src="http://www.placecage.com/300/300" />

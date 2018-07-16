@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import '../styles/fonts.css';
 import '../styles/global.css';
 
@@ -17,6 +18,7 @@ const Layout = ({ children, data }) => (
     <main>
       {children()}
     </main>
+    <Footer />
   </React.Fragment>
 );
 
