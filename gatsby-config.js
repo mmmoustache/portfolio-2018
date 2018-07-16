@@ -3,6 +3,7 @@ module.exports = {
     title: 'Site Title',
     description: 'Test description',
   },
+  pathPrefix: "/portfolio-2018",
   plugins: [
     'gatsby-plugin-react-next', // enables react 16 features
     'gatsby-plugin-react-helmet',

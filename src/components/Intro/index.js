@@ -191,7 +191,7 @@ const Intro = ({ loaded }) => (
       { [...Array.from(Array(5))].map(() => <PanelItem loaded={loaded} delay={Math.random()/5} />) }
     </PanelWrapper>
     <Logo href="#">
-      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      <svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg" x="0px" y="0px"
         width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200">
         <path d="M100.001,0C44.771,0,0,44.771,0,100.001C0,155.229,44.771,200,100.001,200C155.229,200,200,155.229,200,100.001
           C200,44.771,155.229,0,100.001,0z M127.975,154.898c-2.303,1.5-4.852,2.25-7.65,2.25c-0.9,0-1.801-0.1-2.699-0.299

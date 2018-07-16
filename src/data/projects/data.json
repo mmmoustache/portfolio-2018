@@ -4,29 +4,29 @@
       "id": 1,
       "title": "Cityboard",
       "description": "Cityboard is a React application that searches local restaurants, arts and activities using the Yelp Businesses API and Google Firebase.",
-      "image_url": "http://placecage.com/300/300",
+      "image_url": "https://placecage.com/300/300",
       "technologies": [
         "React",
         "Redux",
         "SCSS",
         "Webpack"
       ],
-      "url": "http://www.google.com",
+      "url": "https://www.google.com",
       "repo": "https://github.com/mmmoustache/cityboard"
     },
     {
       "id": 2,
       "title": "React Starter Boilerplate",
       "description": "This is an isomorphic, React boilerplate using Redux, Webpack, SCSS, ",
-      "image_url": "http://placecage.com/300/300",
+      "image_url": "https://placecage.com/300/300",
       "technologies": [
         "Gatsby",
         "React",
         "Styled Components",
         "GraphQL"
       ],
-      "url": "http://www.google.com",
-      "repo": "http://www.github.com"
+      "url": "https://www.google.com",
+      "repo": "https://www.github.com"
     }
   ]
 }

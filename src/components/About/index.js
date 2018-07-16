@@ -78,7 +78,7 @@ const About = ({ isVisible }) =>
   <Wrapper id="about">
     <Inner>
       <Avatar isVisible={isVisible}>
-        <img src="http://www.placecage.com/300/300" />
+        <img src="https://www.placecage.com/300/300" />
       </Avatar>
       <Content isVisible={isVisible}>
         <H3>FILM NERD. MUSIC SNOB. GAME OF THRONES-ER.</H3>
