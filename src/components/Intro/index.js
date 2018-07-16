@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   width: 100%;
 
   &::before {
-    background-image: url("./clouds2.jpg");
+    background-image: url("./clouds.jpg");
     background-size: cover;
     content: '';
     display: block;
