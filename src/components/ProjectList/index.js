@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Card from "../ProjectCard";
 import TrackVisibility from 'react-on-screen';
 
+const offset = -300;
+
 const Wrapper = styled.ul`
   list-style: none;
   margin: 0;
@@ -15,7 +17,7 @@ const ProjectList = ({ items }) => {
       { 
         items && items.map((e, i) => 
           <li key={e.id}>
-            <TrackVisibility offset={-300} partialVisibility>
+            <TrackVisibility offset={offset} partialVisibility once>
               {({ isVisible }) => 
                 <Card
                   title={e.title}

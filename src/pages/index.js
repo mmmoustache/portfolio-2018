@@ -25,23 +25,16 @@ class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { loaded } = this.state;
+    
     return (
-      <div>
-        <TrackVisibility partialVisibility>{({ isVisible }) => <Intro loaded={loaded} isVisible={isVisible} />}</TrackVisibility>
+      <React.Fragment>
+        <Intro loaded={loaded} />
         <ProjectList items={data.allProjectsJson.edges[0].node.items} />
-        <TrackVisibility offset={-300} partialVisibility>{({ isVisible }) => <About isVisible={isVisible} />}</TrackVisibility>
-      </div>
+        <TrackVisibility offset={-300} partialVisibility once>{({ isVisible }) => <About isVisible={isVisible} data={data.allAboutJson.edges[0].node} />}</TrackVisibility>
+      </React.Fragment>
     );
   }
 };
-
-// const IndexPage = ({ data }) => (
-//   <div>
-//     <Intro loaded />
-//     <ProjectList items={data.allProjectsJson.edges[0].node.items} />
-//     <About />
-//   </div>
-// );
 
 export default IndexPage;
 
@@ -59,6 +52,15 @@ export const query = graphql`
             url
             repo
           }
+        }
+      }
+    }
+    allAboutJson {
+      edges {
+        node {
+          title
+          subtitle
+          text
         }
       }
     }

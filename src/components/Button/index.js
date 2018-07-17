@@ -1,18 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
 import H3 from "../H3";
+import { Breakpoints } from '../../utils/breakpoints';
 
 const Wrapper = styled.a`
   background: #fff;
   border: 3px solid black;
   color: black;
   display: block;
-  min-width: 200px;
   overflow: hidden;
   padding: 30px;
   position: relative;
   text-align: center;
   text-decoration: none;
+  width: 100%;
+
+  @media ${Breakpoints.small} {
+    width: 200px;
+  }
 
   &::after,
   &::before {
