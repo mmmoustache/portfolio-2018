@@ -2,22 +2,22 @@
 
 exports[`Component: Intro Should render successfully 1`] = `
 <div
-  className="sc-htpNat WJlRl"
+  className="sc-htpNat iPkDTG"
 >
   <div
     className="sc-gZMcBi hUgYQ"
   >
     <div
-      className="sc-VigVT kcryaK"
+      className="sc-VigVT eykDxo"
     />
     <div
-      className="sc-jTzLTM fiengJ"
+      className="sc-jTzLTM hnASyb"
     />
     <div
-      className="sc-fjdhpX cSJgfs"
+      className="sc-fjdhpX cmLOKh"
     />
     <div
-      className="sc-jzJRlG lfktmC"
+      className="sc-jzJRlG lbGvag"
     />
   </div>
   <div
@@ -28,11 +28,15 @@ exports[`Component: Intro Should render successfully 1`] = `
   >
     <a
       className="sc-iwsKbI bkBAZj"
-      href="/"
+      href="https://www.linkedin.com/in/jack-coventry-713a8811"
+      target="_blank"
+      title="View my LinkedIn Profile"
     />
     <a
       className="sc-dnqmqq ffGrfG"
-      href="/"
+      href="https://github.com/mmmoustache"
+      target="_blank"
+      title="View my GitHub Profile"
     />
   </div>
   <div
@@ -41,15 +45,19 @@ exports[`Component: Intro Should render successfully 1`] = `
     <div
       className="sc-bZQynM gZGNLj"
     >
-      <h3
-        className="sc-bwzfXH iyToRU"
+      <div
+        className="sc-cSHVUG hOeJLS"
       >
-        Front End Web Developer
-      </h3>
+        <h3
+          className="sc-bwzfXH dEOoEJ"
+        >
+          Front End Web Developer
+        </h3>
+      </div>
       <h1
-        className="sc-bdVaJa eppzNE"
+        className="sc-bdVaJa bbbnIp"
       >
-        Jack Coventry
+        jack coventry
       </h1>
     </div>
   </div>

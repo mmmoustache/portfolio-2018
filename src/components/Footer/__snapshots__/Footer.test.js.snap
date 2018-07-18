@@ -9,18 +9,22 @@ exports[`Component: Footer Should render successfully 1`] = `
   >
     <a
       className="sc-ifAKCX dUTKGf"
-      href="/"
+      href="https://www.linkedin.com/in/jack-coventry-713a8811"
+      target="_blank"
+      title="View my LinkedIn Profile"
     />
     <a
       className="sc-bxivhb ePKVXL"
-      href="/"
+      href="https://github.com/mmmoustache"
+      target="_blank"
+      title="View my GitHub Profile"
     />
   </div>
   <div
-    className="sc-bdVaJa jyBKLT"
+    className="sc-bdVaJa kYfrCF"
   >
     <a
-      href="/"
+      href="https://github.com/mmmoustache/portfolio-2018"
       target="_blank"
       title="View source code on GitHub"
     >

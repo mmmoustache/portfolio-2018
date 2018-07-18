@@ -5,16 +5,16 @@ exports[`Component: Border Should render successfully 1`] = `
   className="sc-bdVaJa jLcSdP"
 >
   <div
-    className="sc-htpNat cFnegn"
+    className="sc-htpNat cmvZAJ"
   />
   <div
-    className="sc-bxivhb dUTXIM"
+    className="sc-bxivhb gvqaUy"
   />
   <div
-    className="sc-ifAKCX gNDEtw"
+    className="sc-ifAKCX eCXUVy"
   />
   <div
-    className="sc-EHOje knXPzM"
+    className="sc-EHOje xMvAg"
   />
 </div>
 `;

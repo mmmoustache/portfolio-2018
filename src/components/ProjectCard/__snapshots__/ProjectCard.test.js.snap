@@ -2,22 +2,22 @@
 
 exports[`Component: ProjectCard Should render successfully 1`] = `
 <div
-  className="sc-EHOje idMEnW"
+  className="sc-EHOje kTHTjp"
 >
   <div
     className="sc-jTzLTM blZols"
   >
     <div
-      className="sc-jzJRlG iqgKRc"
+      className="sc-jzJRlG dsDlAm"
     />
     <div
-      className="sc-cSHVUG fRZEWR"
+      className="sc-cSHVUG inMygV"
     />
     <div
-      className="sc-kAzzGY bAiDWj"
+      className="sc-kAzzGY cPllvt"
     />
     <div
-      className="sc-chPdSV cAeglF"
+      className="sc-chPdSV UbQYY"
     />
   </div>
   <div
@@ -49,7 +49,7 @@ exports[`Component: ProjectCard Should render successfully 1`] = `
         className="sc-bZQynM fDfFdw"
       >
         <a
-          className="sc-htpNat deSbaL"
+          className="sc-htpNat bsfifO"
           href="Test"
         >
           <span
@@ -63,7 +63,7 @@ exports[`Component: ProjectCard Should render successfully 1`] = `
           </span>
         </a>
         <a
-          className="sc-htpNat deSbaL"
+          className="sc-htpNat bsfifO"
           href="Test"
         >
           <span

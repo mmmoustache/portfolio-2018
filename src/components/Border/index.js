@@ -28,7 +28,7 @@ const Border = styled.div`
 
   ${
     props => props.altColour && `
-      background: ${Colours.white};
+      background: ${Colours.primary};
     `
   }
 `;
@@ -38,7 +38,7 @@ export const Border1 = Border.extend`
   left: 0;
   top: 0;
   transition: width ${Transition} ${Timings.default};
-  transition-delay: ${Transition};
+  transition-delay: 0.4s;
   width: 0%;
 
   ${
@@ -53,7 +53,7 @@ export const Border2 = Border.extend`
   right: 0;
   top: 0;
   transition: height  ${Transition} ${Timings.default};
-  transition-delay: calc(${Transition}*2);
+  transition-delay: 0.6s;
   width: ${BorderSettings.size};
 
   ${
@@ -67,7 +67,7 @@ export const Border3 = Border1.extend`
   left: auto;
   right: 0;
   top: calc(100% - ${BorderSettings.size});
-  transition-delay: calc(${Transition}*3);
+  transition-delay: 0.8s;
 `;
 
 export const Border4 = Border2.extend`
@@ -75,5 +75,5 @@ export const Border4 = Border2.extend`
   left: 0;
   right: auto;
   top: auto;
-  transition-delay: calc(${Transition}*4);
+  transition-delay: 1s;
 `;
