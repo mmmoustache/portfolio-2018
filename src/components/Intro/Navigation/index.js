@@ -1,22 +1,28 @@
 import styled from "styled-components";
+import { Colours } from '../../../utils/colours';
+import { Timings, Durations } from '../../../utils/transitions';
+import { Border as BorderSettings } from '../../../utils/layouts';
+import { convertRemToPixels as rem } from '../../../utils/utils';
+
+const NavOffset = rem('40px');
 
 export const Navigation = styled.div`
   position: absolute;
-  top: 40px;
-  right: 40px;
+  right: ${NavOffset};
+  top: ${NavOffset};
   z-index: 2;
 `;
 
 export const NavigationItem = styled.a`
-  color: #fff;
+  color: ${Colours.white};
   display: inline-block;
   font-weight: bold;
   opacity: 0;
-  padding: 10px 20px;
+  margin: 10px 20px;
   position: relative;
   text-decoration: none;
   transform: translateY(-10px);
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  transition: opacity ${Durations.fast} ${Timings.default}, transform ${Durations.fast} ${Timings.default};
 
   ${
     props => props.loaded && `
@@ -31,18 +37,23 @@ export const NavigationItem = styled.a`
     `
   }
 
+  &::before {
+    background: ${Colours.primary};
+    bottom: -${rem('5px')};
+    content: '';
+    display: block;
+    height: ${BorderSettings.size};
+    left: 0;
+    position: absolute;
+    transition: width ${Durations.ultrafast} ${Timings.default};
+    width: 0;
+    z-index: 1;
+  }
+
+  &:focus,
   &:hover {
     &::before {
-      background: red;
-      content: '';
-      display: block;
-      height: 20%;
       width: 100%;
-      left: 0;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 1;
     }
   }
 `;

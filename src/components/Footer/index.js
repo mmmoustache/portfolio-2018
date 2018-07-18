@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from "styled-components";
 import Footnote from './Footnote';
 import Wrapper from './Wrapper';
 import { Links, LinkedIn, Github } from './Links';

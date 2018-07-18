@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Border Should render successfully 1`] = `
+<div
+  className="sc-bdVaJa jLcSdP"
+>
+  <div
+    className="sc-htpNat cFnegn"
+  />
+  <div
+    className="sc-bxivhb dUTXIM"
+  />
+  <div
+    className="sc-ifAKCX gNDEtw"
+  />
+  <div
+    className="sc-EHOje knXPzM"
+  />
+</div>
+`;

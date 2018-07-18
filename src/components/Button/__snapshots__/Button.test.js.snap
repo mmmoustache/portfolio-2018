@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Button Should render successfully 1`] = `
+<a
+  className="sc-htpNat deSbaL"
+  href="/"
+>
+  <span
+    className="sc-bwzfXH cbEDiN"
+  >
+    <h3
+      className="sc-bdVaJa bjYFto"
+    >
+      Test
+    </h3>
+  </span>
+</a>
+`;

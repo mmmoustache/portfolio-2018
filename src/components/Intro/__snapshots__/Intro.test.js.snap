@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Intro Should render successfully 1`] = `
+<div
+  className="sc-htpNat WJlRl"
+>
+  <div
+    className="sc-gZMcBi hUgYQ"
+  >
+    <div
+      className="sc-VigVT kcryaK"
+    />
+    <div
+      className="sc-jTzLTM fiengJ"
+    />
+    <div
+      className="sc-fjdhpX cSJgfs"
+    />
+    <div
+      className="sc-jzJRlG lfktmC"
+    />
+  </div>
+  <div
+    className="sc-bxivhb gpTVTa"
+  />
+  <div
+    className="sc-EHOje eCkAKG"
+  >
+    <a
+      className="sc-iwsKbI bkBAZj"
+      href="/"
+    />
+    <a
+      className="sc-dnqmqq ffGrfG"
+      href="/"
+    />
+  </div>
+  <div
+    className="sc-gzVnrw hnTAub"
+  >
+    <div
+      className="sc-bZQynM gZGNLj"
+    >
+      <h3
+        className="sc-bwzfXH iyToRU"
+      >
+        Front End Web Developer
+      </h3>
+      <h1
+        className="sc-bdVaJa eppzNE"
+      >
+        Jack Coventry
+      </h1>
+    </div>
+  </div>
+</div>
+`;

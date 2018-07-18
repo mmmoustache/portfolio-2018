@@ -1,19 +1,13 @@
 import React from 'react';
-import styled from "styled-components";
+import PropTypes from 'prop-types';
 import Card from "../ProjectCard";
 import TrackVisibility from 'react-on-screen';
 
 const offset = -300;
 
-const Wrapper = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding: 0;
-`;
-
 const ProjectList = ({ items }) => {
   return (
-    <Wrapper id="work">
+    <ul id="work">
       { 
         items && items.map((e, i) => 
           <li key={e.id}>
@@ -34,8 +28,16 @@ const ProjectList = ({ items }) => {
           </li>
         )
       }
-    </Wrapper>
+    </ul>
   )
+};
+
+ProjectList.propTypes = {
+  items: PropTypes.array,
+};
+
+ProjectList.defaultProps = {
+  items: undefined,
 };
 
 export default ProjectList;

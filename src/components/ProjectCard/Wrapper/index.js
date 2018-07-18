@@ -1,22 +1,31 @@
 import styled from "styled-components";
+import { Colours } from '../../../utils/colours';
+import { Timings, Durations } from '../../../utils/transitions';
+import { Breakpoints } from '../../../utils/breakpoints';
+import { convertRemToPixels as rem } from '../../../utils/utils';
 
 export default styled.div`
-  background: black;
-  height: 100vh;
+  background: ${Colours.black};
+  box-sizing: border-box;
   overflow: hidden;
+  padding: ${rem('60px')} 0;
   position: relative;
   transition-delay: 1s;
-  transition: background 0.2s ease-in-out;
-  
+  transition: background ${Durations.default} ${Timings.default};
+
+  @media ${Breakpoints.medium} {
+    height: 100vh;
+  }
+
   ${
     props => props.isVisible && `
-      background: #F25F5C;
+      background: ${Colours.secondary};
     `
   }
 
   ${
     props => props.isVisible && props.isOdd && `
-      background: #FCA311;
+      background: ${Colours.primary};
     `
   }
 `;

@@ -21,11 +21,17 @@ const Layout = ({ children, data }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func.isRequired,
+  data: PropTypes.object,
+};
+
+Layout.defaultProps = {
+  data: undefined,
 };
 
 export default Layout;
 
+// eslint-disable-next-line
 export const query = graphql`
   query SiteTitleQuery {
     site {

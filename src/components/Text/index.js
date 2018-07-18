@@ -1,19 +1,15 @@
 import React from 'react';
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  width: 100%;
-
-  p {
-    line-height: 1.6;
-    margin: 0 0 20px;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
-`;
+import PropTypes from 'prop-types';
+import Wrapper from './Wrapper';
 
 const Text = ({ children }) => <Wrapper>{children}</Wrapper>;
+
+Text.propTypes = {
+  children: PropTypes.node,
+};
+
+Text.defaultProps = {
+  children: undefined,
+};
 
 export default Text;

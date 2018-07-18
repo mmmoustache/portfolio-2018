@@ -3,7 +3,20 @@
   "description": "Jack Coventry | Front End Web Developer",
   "version": "1.0.0",
   "author": "Jack Coventry",
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
+      "git add"
+    ]
+  },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.6",
+    "eslint": "^5.1.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-react": "^7.10.0",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
@@ -11,16 +24,27 @@
     "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-json": "^1.0.20",
+    "husky": "^0.14.3",
+    "jest": "21.2.1",
+    "lint-staged": "^7.2.0",
+    "opn-cli": "^3.1.0",
+    "prop-types": "^15.6.2",
     "react-helmet": "^5.2.0",
     "react-on-screen": "^2.0.4",
-    "styled-components": "^3.3.3"
+    "react-test-renderer": "15",
+    "regenerator-runtime": "^0.12.0",
+    "styled-components": "^3.3.3",
+    "stylelint": "^9.3.0"
   },
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
+    "test": "jest",
+    "coverage": "jest --coverage && opn coverage/lcov-report/index.html",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"

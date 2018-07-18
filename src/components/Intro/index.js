@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import H1 from '../H1';
 import H3 from '../H3';
 import Wrapper from './Wrapper';
@@ -9,27 +10,7 @@ import Inner from './Inner';
 import { LinkedIn, Github } from './Link';
 import { Wrapper as BorderWrapper, Border1 as B1, Border2 as B2, Border3 as B3, Border4 as B4 } from "../Border";
 
-const NumberOfPanels = 5;
-const Links = [
-  {
-    "id": 1,
-    "href": "#work",
-    "title": "Work",
-  },
-  {
-    "id": 2,
-    "href": "#about",
-    "title": "About",
-  },
-  {
-    "id": 3,
-    "download": true,
-    "href": "/JackCoventryCV2018.pdf",
-    "title": "CV",
-  }
-];
-
-const Intro = ({ loaded }) => (
+const Intro = ({ loaded, navigation }) => (
   <Wrapper loaded={loaded}>
     <BorderWrapper>
       <B1 isVisible={loaded} altColour />
@@ -38,7 +19,7 @@ const Intro = ({ loaded }) => (
       <B4 isVisible={loaded} altColour />
     </BorderWrapper>
     <Navigation>
-      { Links && Links.map(e => <Link key={e.id} href={e.href} download={e.download} index={e.id} loaded={loaded}>{e.title}</Link>)}
+      { navigation && navigation.map(e => <Link key={e.id} href={e.href} download={e.id === 3} index={e.id} loaded={loaded}>{e.title}</Link>)}
     </Navigation>
     <Footer>
       <LinkedIn loaded={loaded} href="/" />
@@ -52,5 +33,15 @@ const Intro = ({ loaded }) => (
     </Inner>
   </Wrapper>
 );
+
+Intro.propTypes = {
+  loaded: PropTypes.bool,
+  navigation: PropTypes.array,
+};
+
+Intro.defaultProps = {
+  loaded: false,
+  navigation: undefined,
+};
 
 export default Intro;

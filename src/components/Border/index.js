@@ -1,33 +1,45 @@
 import styled from "styled-components";
+import { Colours } from '../../utils/colours';
+import { Timings } from '../../utils/transitions';
+import { Border as BorderSettings } from '../../utils/layouts';
+import { Breakpoints } from '../../utils/breakpoints';
+
+const WrapperSize = '50vh';
+const Transition = '0.2s';
 
 export const Wrapper = styled.div`
-  position: absolute;
-  height: 50vh;
-  width: 50vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+  display: none;
+
+  @media ${Breakpoints.medium} {
+    display: block;
+    height: ${WrapperSize};
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: ${WrapperSize};
+    z-index: 0;
+  }
 `;
 
 const Border = styled.div`
-  background: #000;
+  background: ${Colours.black};
   position: absolute;
 
   ${
     props => props.altColour && `
-      background: #fff;
+      background: ${Colours.white};
     `
   }
 `;
 
 export const Border1 = Border.extend`
-  top: 0;
-  height: 3px;
-  width: 0%;
+  height: ${BorderSettings.size};
   left: 0;
-  transition: width 0.2s ease-in-out;
-  transition-delay: 0.2s;
+  top: 0;
+  transition: width ${Transition} ${Timings.default};
+  transition-delay: ${Transition};
+  width: 0%;
 
   ${
     props => props.isVisible && `
@@ -37,12 +49,12 @@ export const Border1 = Border.extend`
 `;
 
 export const Border2 = Border.extend`
-  top: 0;
   height: 0%;
-  width: 3px;
   right: 0;
-  transition: height 0.2s ease-in-out;
-  transition-delay: 0.4s;
+  top: 0;
+  transition: height  ${Transition} ${Timings.default};
+  transition-delay: calc(${Transition}*2);
+  width: ${BorderSettings.size};
 
   ${
     props => props.isVisible && `
@@ -54,14 +66,14 @@ export const Border2 = Border.extend`
 export const Border3 = Border1.extend`
   left: auto;
   right: 0;
-  top: calc(100% - 3px);
-  transition-delay: 0.6s;
+  top: calc(100% - ${BorderSettings.size});
+  transition-delay: calc(${Transition}*3);
 `;
 
 export const Border4 = Border2.extend`
-  right: auto;
-  left: 0;
-  top: auto;
   bottom: 0;
-  transition-delay: 0.8s;
+  left: 0;
+  right: auto;
+  top: auto;
+  transition-delay: calc(${Transition}*4);
 `;

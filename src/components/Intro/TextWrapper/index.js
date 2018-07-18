@@ -1,16 +1,17 @@
 import styled from "styled-components";
+import { Colours } from '../../../utils/colours';
 
 export default styled.div`
- position: relative;
+  position: relative;
 
- &::before {
-  background: #000;
-  left: -100%;
-  position: absolute;
-  height: 80%;
-  width: 100%;
-  top: 0;
- }
+  &::before {
+    background: ${Colours.black};
+    left: -100%;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 0;
+  }
 
   ${
     props => props.loaded && `

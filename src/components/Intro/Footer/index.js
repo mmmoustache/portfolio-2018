@@ -1,9 +1,12 @@
 import styled from "styled-components";
+import { convertRemToPixels as rem } from '../../../utils/utils';
+
+const offset = rem('40px');
 
 export default styled.div`
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  z-index: 2;
+  bottom: ${offset};
   display: flex;
+  position: absolute;
+  right: ${offset};
+  z-index: 2;
 `;

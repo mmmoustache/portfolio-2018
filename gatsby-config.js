@@ -23,5 +23,12 @@ module.exports = {
         path: `${__dirname}/src/data/about/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'navigation',
+        path: `${__dirname}/src/data/navigation/`,
+      },
+    },
   ],
 }

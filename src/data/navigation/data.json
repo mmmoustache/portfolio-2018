@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "href": "#work",
+      "title": "Work"
+    },
+    {
+      "id": "2",
+      "href": "#about",
+      "title": "About"
+    },
+    {
+      "id": "3",
+      "href": "/JackCoventryCV2018.pdf",
+      "title": "CV"
+    }
+  ]
+}

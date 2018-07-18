@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ProjectList Should render successfully 1`] = `
+<ul
+  id="work"
+/>
+`;

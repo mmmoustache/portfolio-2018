@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: ProjectCard Should render successfully 1`] = `
+<div
+  className="sc-EHOje idMEnW"
+>
+  <div
+    className="sc-jTzLTM blZols"
+  >
+    <div
+      className="sc-jzJRlG iqgKRc"
+    />
+    <div
+      className="sc-cSHVUG fRZEWR"
+    />
+    <div
+      className="sc-kAzzGY bAiDWj"
+    />
+    <div
+      className="sc-chPdSV cAeglF"
+    />
+  </div>
+  <div
+    className="sc-ifAKCX kuTWZI"
+  >
+    <div
+      className="sc-gqjmRU cZBFKU"
+    >
+      <div
+        className="sc-VigVT bjRZMr"
+      >
+        <ul
+          className="sc-htoDjs iOfqWF"
+        />
+        <h2
+          className="sc-gZMcBi FOban"
+        >
+          Test
+        </h2>
+        <div
+          className="sc-bxivhb erkEfj"
+        >
+          <p>
+            Test
+          </p>
+        </div>
+      </div>
+      <div
+        className="sc-bZQynM fDfFdw"
+      >
+        <a
+          className="sc-htpNat deSbaL"
+          href="Test"
+        >
+          <span
+            className="sc-bwzfXH cbEDiN"
+          >
+            <h3
+              className="sc-bdVaJa bjYFto"
+            >
+              View Site
+            </h3>
+          </span>
+        </a>
+        <a
+          className="sc-htpNat deSbaL"
+          href="Test"
+        >
+          <span
+            className="sc-bwzfXH cbEDiN"
+          >
+            <h3
+              className="sc-bdVaJa bjYFto"
+            >
+              View Code
+            </h3>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

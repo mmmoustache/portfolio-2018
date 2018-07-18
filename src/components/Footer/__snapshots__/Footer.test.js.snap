@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: Footer Should render successfully 1`] = `
+<div
+  className="sc-bwzfXH klcVNy"
+>
+  <div
+    className="sc-EHOje fhxHOS"
+  >
+    <a
+      className="sc-ifAKCX dUTKGf"
+      href="/"
+    />
+    <a
+      className="sc-bxivhb ePKVXL"
+      href="/"
+    />
+  </div>
+  <div
+    className="sc-bdVaJa jyBKLT"
+  >
+    <a
+      href="/"
+      target="_blank"
+      title="View source code on GitHub"
+    >
+      Made by me
+    </a>
+    <a
+      href="#"
+      title="Back to top"
+    >
+      Back to top
+    </a>
+  </div>
+</div>
+`;

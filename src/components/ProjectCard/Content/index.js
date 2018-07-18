@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import { Breakpoints } from '../../../utils/breakpoints';
+import { Colours } from '../../../utils/colours';
+import { Timings, Durations } from '../../../utils/transitions';
+import { convertRemToPixels as rem } from '../../../utils/utils';
+
+const ContentOffset = rem('40px');
 
 export const Content = styled.div`
   display: inline-block;
-  position: relative;
-  width: 100%;
   opacity: 0;
-  transform: translateY(40px);
-  transition: 0.5s opacity ease-in-out, 0.5s transform ease-in-out;
-  transition-delay: 0.25s;
+  position: relative;
+  transform: translateY(${ContentOffset});
+  transition:  opacity ${Durations.default} ${Timings.default}, transform ${Durations.default} ${Timings.default};
+  transition-delay: ${Durations.fast};
+  width: 100%;
 
   @media ${Breakpoints.large} {
     width: 60%;
@@ -23,5 +28,5 @@ export const Content = styled.div`
 `;
 
 export const ContentInner = styled.div`
-  color: white;
+  color: ${Colours.white};
 `;

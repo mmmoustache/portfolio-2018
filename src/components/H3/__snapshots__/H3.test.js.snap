@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: H3 Should render successfully 1`] = `
+<h3
+  className="sc-bdVaJa ccvsac"
+>
+  Test
+</h3>
+`;

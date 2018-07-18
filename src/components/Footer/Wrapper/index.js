@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Colours } from '../../../utils/colours';
 
 export default styled.div`
-  background: #222;
-  color: white;
+  background: ${Colours.darkgrey};
+  color: ${Colours.white};
 `;

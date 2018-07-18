@@ -1,18 +1,25 @@
 import styled from "styled-components";
+import { Timings, Durations } from '../../../utils/transitions';
+import { convertRemToPixels as rem } from '../../../utils/utils';
+
+const LinkSize = rem('40px');
+const LinkOffset = rem('10px');
+const LinkSpacing = rem('20px');
 
 const Link = styled.a`
   display: block;
-  height: 40px;
-  margin-left: 20px;
+  height: ${LinkSize};
+  margin-left: ${LinkSpacing};
   opacity: 0;
   position: relative;
   text-decoration: none;
-  transform: translateY(10px);
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  width: 40px;
+  transform: translateY(${LinkOffset});
+  transition: opacity ${Durations.fast} ${Timings.default}, transform ${Durations.fast} ${Timings.default};
+  width: ${LinkSize};
 
   &:hover {
     opacity: 0.7;
+    transition-delay: 0s;
   }
   
   ${
@@ -23,17 +30,17 @@ const Link = styled.a`
   }
 
   &::before {
-    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     content: '';
     display: block;
-    height: 40px;
-    width: 40px;
+    height: ${LinkSize};
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
+    width: ${LinkSize};
   }
 `;
 

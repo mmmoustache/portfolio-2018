@@ -1,10 +1,13 @@
 import styled from "styled-components";
+import { convertRemToPixels as rem } from '../../../utils/utils';
+import { Colours } from '../../../utils/colours';
+import { Layouts } from '../../../utils/layouts';
 
 export default styled.div`
-  color: #fff;
+  color: ${Colours.white};
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
+  max-width: ${Layouts.constraint};
+  padding: ${rem('20px')};
   position: relative;
   top: 50%;
   transform: translateY(-50%);

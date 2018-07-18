@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TrackVisibility from 'react-on-screen';
-
 import About from '../components/About';
 import Intro from '../components/Intro';
 import ProjectList from '../components/ProjectList';
@@ -28,16 +28,25 @@ class IndexPage extends React.Component {
     
     return (
       <React.Fragment>
-        <Intro loaded={loaded} />
+        <Intro loaded={loaded} navigation={data.allNavigationJson.edges[0].node.items} />
         <ProjectList items={data.allProjectsJson.edges[0].node.items} />
         <TrackVisibility offset={-300} partialVisibility once>{({ isVisible }) => <About isVisible={isVisible} data={data.allAboutJson.edges[0].node} />}</TrackVisibility>
       </React.Fragment>
     );
   }
+}
+
+IndexPage.propTypes = {
+  data: PropTypes.object,
+};
+
+IndexPage.defaultProps = {
+  data: undefined,
 };
 
 export default IndexPage;
 
+// eslint-disable-next-line
 export const query = graphql`
   query ProjectsQuery {
     allProjectsJson {
@@ -61,6 +70,17 @@ export const query = graphql`
           title
           subtitle
           text
+        }
+      }
+    }
+    allNavigationJson {
+      edges {
+        node {
+          items {
+            id
+            href
+            title
+          }
         }
       }
     }
