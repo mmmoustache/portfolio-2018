@@ -17,6 +17,7 @@ exports[`Component: Footer Should render successfully 1`] = `
     <a
       className="sc-bxivhb nQhIW"
       href={undefined}
+      rel="noopener noreferrer"
       target="_blank"
       title="View my GitHub Profile"
     />

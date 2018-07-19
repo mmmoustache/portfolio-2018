@@ -8,7 +8,7 @@ const Footer = ({ linkedIn, gitHub }) => (
   <Wrapper>
     <Links>
       <LinkedIn href={linkedIn} title="View my LinkedIn Profile" target="_blank" rel="noopener noreferrer" />
-      <Github href={gitHub} title="View my GitHub Profile" target="_blank" />
+      <Github href={gitHub} title="View my GitHub Profile" target="_blank" rel="noopener noreferrer" />
     </Links>
     <Footnote>
       <a href="https://github.com/mmmoustache/portfolio-2018" title="View source code on GitHub" target="_blank" rel="noopener noreferrer">Made by me</a>

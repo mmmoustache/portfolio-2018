@@ -10,7 +10,7 @@ function ServiceWorker() {
   if (typeof window !== 'undefined') {
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        navigator.serviceWorker.register('/portfolio-2018/sw.js').then(function(registration) {
           // Registration was successful
           console.info('ServiceWorker registration successful with scope: ', registration.scope);
         }, function(err) {
