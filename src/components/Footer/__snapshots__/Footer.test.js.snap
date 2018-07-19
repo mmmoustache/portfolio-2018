@@ -8,23 +8,25 @@ exports[`Component: Footer Should render successfully 1`] = `
     className="sc-EHOje fhxHOS"
   >
     <a
-      className="sc-ifAKCX dUTKGf"
-      href="https://www.linkedin.com/in/jack-coventry-713a8811"
+      className="sc-ifAKCX gEwwzr"
+      href={undefined}
+      rel="noopener noreferrer"
       target="_blank"
       title="View my LinkedIn Profile"
     />
     <a
-      className="sc-bxivhb ePKVXL"
-      href="https://github.com/mmmoustache"
+      className="sc-bxivhb nQhIW"
+      href={undefined}
       target="_blank"
       title="View my GitHub Profile"
     />
   </div>
   <div
-    className="sc-bdVaJa kYfrCF"
+    className="sc-bdVaJa fXugcU"
   >
     <a
       href="https://github.com/mmmoustache/portfolio-2018"
+      rel="noopener noreferrer"
       target="_blank"
       title="View source code on GitHub"
     >

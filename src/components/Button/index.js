@@ -13,7 +13,7 @@ const Button = ({ href, children }) =>
 ;
 
 Button.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.string,
   href: PropTypes.string,
 };
 

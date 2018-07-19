@@ -2,14 +2,14 @@
 
 exports[`Component: Button Should render successfully 1`] = `
 <a
-  className="sc-htpNat bsfifO"
+  className="sc-htpNat kReTet"
   href="/"
 >
   <span
     className="sc-bwzfXH cbEDiN"
   >
     <h3
-      className="sc-bdVaJa bjYFto"
+      className="sc-bdVaJa iubVGX"
     >
       Test
     </h3>

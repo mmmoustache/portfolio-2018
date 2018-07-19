@@ -1,16 +1,28 @@
 import styled from "styled-components";
+import { isBrowser } from 'react-device-detect';
 import { Colours } from '../../../utils/colours';
 import { Timings, Durations } from '../../../utils/transitions';
 import { Border as BorderSettings } from '../../../utils/layouts';
 import { convertRemToPixels as rem } from '../../../utils/utils';
+import { Breakpoints } from '../../../utils/breakpoints';
 
 const NavOffset = rem('40px');
 
 export const Navigation = styled.div`
   position: absolute;
-  right: ${NavOffset};
+  right: 0;
+  text-align: center;
   top: ${NavOffset};
+  width: 100%;
   z-index: 2;
+
+  
+  @media ${Breakpoints.small} {
+    right: ${NavOffset};
+    text-align: left;
+    width: auto;
+  }
+
 `;
 
 export const NavigationItem = styled.a`
@@ -18,10 +30,10 @@ export const NavigationItem = styled.a`
   display: inline-block;
   font-weight: bold;
   opacity: 0;
-  margin: 10px 20px;
+  margin: ${rem('10px')} ${rem('20px')};
   position: relative;
   text-decoration: none;
-  transform: translateY(-10px);
+  transform: translateY(-${rem('10px')});
   transition: opacity ${Durations.fast} ${Timings.default}, transform ${Durations.fast} ${Timings.default};
 
   ${
@@ -33,7 +45,7 @@ export const NavigationItem = styled.a`
 
   ${
     props => props.index && `
-      transition-delay: ${props.index*0.125}s;
+      transition-delay: ${(props.index/2)*0.125}s;
     `
   }
 
@@ -50,10 +62,14 @@ export const NavigationItem = styled.a`
     z-index: 1;
   }
 
-  &:focus,
-  &:hover {
-    &::before {
-      width: 100%;
-    }
+  ${
+    isBrowser && `
+      &:focus,
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }    
+    `
   }
 `;

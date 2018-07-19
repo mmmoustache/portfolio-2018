@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { isBrowser } from 'react-device-detect';
 import { Timings, Durations } from '../../../utils/transitions';
 import { convertRemToPixels as rem } from '../../../utils/utils';
 
@@ -17,9 +18,13 @@ const Link = styled.a`
   transition: opacity ${Durations.fast} ${Timings.default}, transform ${Durations.fast} ${Timings.default};
   width: ${LinkSize};
 
-  &:hover {
-    opacity: 0.7;
-    transition-delay: 0s;
+  ${
+    isBrowser && `
+      &:hover {
+        opacity: 0.7;
+        transition-delay: 0s;
+      }    
+    `
   }
   
   ${
@@ -45,7 +50,7 @@ const Link = styled.a`
 `;
 
 export const Github = Link.extend`
-  transition-delay: ${1*0.125}s;
+  transition-delay: ${0.5*0.125}s;
 
   &::before {
     background-image: url('./github.svg');
@@ -53,7 +58,7 @@ export const Github = Link.extend`
 `;
 
 export const LinkedIn = Link.extend`
-  transition-delay: ${2*0.125}s;
+  transition-delay: ${1*0.125}s;
 
   &::before {
     background-image: url('./linkedin.svg');

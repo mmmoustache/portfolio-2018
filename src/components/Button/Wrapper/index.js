@@ -1,14 +1,16 @@
 import styled from "styled-components";
+import { isBrowser } from 'react-device-detect';
 import { Breakpoints } from '../../../utils/breakpoints';
 import { Colours } from '../../../utils/colours';
 import { Timings, Durations } from '../../../utils/transitions';
 import { Border as BorderSettings } from '../../../utils/layouts';
+import { convertRemToPixels as rem } from '../../../utils/utils';
 
 const Small = {
-  width: '200px',
+  width: `${rem('200px')}`,
 };
 
-const BorderPadding = '30px';
+const BorderPadding = `${rem('30px')}`;
 const Offset = '120%';
 const BackgroundSkew = '-25deg';
 
@@ -47,14 +49,18 @@ export default styled.a`
     transition-delay: 0.1s;
   }
 
-  &:focus,
-  &:hover {
-    background: ${Colours.black};
-    color: ${Colours.white};
+  ${
+    isBrowser && `
+      &:focus,
+      &:hover {
+        background: ${Colours.black};
+        color: ${Colours.white};
 
-    &::after,
-    &::before {
-      left: ${Offset};
-    }
+        &::after,
+        &::before {
+          left: ${Offset};
+        }
+      } 
+    `
   }
 `;

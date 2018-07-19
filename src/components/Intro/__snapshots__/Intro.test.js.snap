@@ -5,57 +5,59 @@ exports[`Component: Intro Should render successfully 1`] = `
   className="sc-htpNat iPkDTG"
 >
   <div
-    className="sc-gZMcBi hUgYQ"
+    className="sc-gqjmRU ccgbHK"
   >
     <div
-      className="sc-VigVT eykDxo"
+      className="sc-jTzLTM cNbpKx"
     />
     <div
-      className="sc-jTzLTM hnASyb"
+      className="sc-fjdhpX bffrLy"
     />
     <div
-      className="sc-fjdhpX cmLOKh"
+      className="sc-jzJRlG jCGiTt"
     />
     <div
-      className="sc-jzJRlG lbGvag"
+      className="sc-cSHVUG eFPJOb"
     />
   </div>
   <div
-    className="sc-bxivhb gpTVTa"
+    className="sc-bxivhb hGBFui"
   />
   <div
     className="sc-EHOje eCkAKG"
   >
     <a
-      className="sc-iwsKbI bkBAZj"
-      href="https://www.linkedin.com/in/jack-coventry-713a8811"
+      className="sc-gZMcBi cQWaow"
+      href={undefined}
+      rel="noopener noreferrer"
       target="_blank"
       title="View my LinkedIn Profile"
     />
     <a
-      className="sc-dnqmqq ffGrfG"
-      href="https://github.com/mmmoustache"
+      className="sc-iwsKbI cbXTBy"
+      href={undefined}
+      rel="noopener noreferrer"
       target="_blank"
       title="View my GitHub Profile"
     />
   </div>
   <div
-    className="sc-gzVnrw hnTAub"
+    className="sc-htoDjs jLBQXO"
   >
     <div
       className="sc-bZQynM gZGNLj"
     >
       <div
-        className="sc-cSHVUG hOeJLS"
+        className="sc-gzVnrw fOlWni"
       >
         <h3
-          className="sc-bwzfXH dEOoEJ"
+          className="sc-bwzfXH GPZWx"
         >
           Front End Web Developer
         </h3>
       </div>
       <h1
-        className="sc-bdVaJa bbbnIp"
+        className="sc-bdVaJa dJVMHP"
       >
         jack coventry
       </h1>

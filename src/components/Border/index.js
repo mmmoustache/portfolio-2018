@@ -3,22 +3,32 @@ import { Colours } from '../../utils/colours';
 import { Timings } from '../../utils/transitions';
 import { Border as BorderSettings } from '../../utils/layouts';
 import { Breakpoints } from '../../utils/breakpoints';
+import { convertRemToPixels as rem } from '../../utils/utils';
 
+const WrapperSizeMobile = '25vh';
 const WrapperSize = '50vh';
-const Transition = '0.2s';
+const Transition = '0.3s';
 
 export const Wrapper = styled.div`
-  display: none;
+  display: block;
+  height: ${WrapperSizeMobile};
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: ${WrapperSizeMobile};
+  z-index: 0;
+
+  ${
+    props => !props.mobileCentered && `
+      top: -${rem('70px')};
+    `
+  }
 
   @media ${Breakpoints.medium} {
-    display: block;
     height: ${WrapperSize};
-    left: 50%;
-    position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
     width: ${WrapperSize};
-    z-index: 0;
   }
 `;
 
@@ -38,7 +48,7 @@ export const Border1 = Border.extend`
   left: 0;
   top: 0;
   transition: width ${Transition} ${Timings.default};
-  transition-delay: 0.4s;
+  transition-delay: 0.3s;
   width: 0%;
 
   ${
@@ -53,7 +63,7 @@ export const Border2 = Border.extend`
   right: 0;
   top: 0;
   transition: height  ${Transition} ${Timings.default};
-  transition-delay: 0.6s;
+  transition-delay: 0.45s;
   width: ${BorderSettings.size};
 
   ${
@@ -67,7 +77,7 @@ export const Border3 = Border1.extend`
   left: auto;
   right: 0;
   top: calc(100% - ${BorderSettings.size});
-  transition-delay: 0.8s;
+  transition-delay: 0.6s;
 `;
 
 export const Border4 = Border2.extend`
@@ -75,5 +85,5 @@ export const Border4 = Border2.extend`
   left: 0;
   right: auto;
   top: auto;
-  transition-delay: 1s;
+  transition-delay: 0.75s;
 `;

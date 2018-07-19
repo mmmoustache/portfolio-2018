@@ -1,7 +1,9 @@
+import { convertRemToPixels as rem } from './utils';
+
 export const Layouts = {
-  constraint: `1200px`,
+  constraint: `${rem('1200px')}`,
 };
 
 export const Border = {
-  size: `3px`,
+  size: `${rem('3px')}`,
 };

@@ -2,7 +2,7 @@
 
 exports[`Component: H3 Should render successfully 1`] = `
 <h3
-  className="sc-bdVaJa ccvsac"
+  className="sc-bdVaJa sXuus"
 >
   Test
 </h3>

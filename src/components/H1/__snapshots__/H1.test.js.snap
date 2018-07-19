@@ -2,7 +2,7 @@
 
 exports[`Component: H1 Should render successfully 1`] = `
 <h1
-  className="sc-bdVaJa bbbnIp"
+  className="sc-bdVaJa dJVMHP"
 >
   Test
 </h1>

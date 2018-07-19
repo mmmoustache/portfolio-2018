@@ -2,38 +2,38 @@
 
 exports[`Component: ProjectCard Should render successfully 1`] = `
 <div
-  className="sc-EHOje kTHTjp"
+  className="sc-EHOje gxbxbm"
 >
   <div
-    className="sc-jTzLTM blZols"
+    className="sc-jTzLTM ifRJqm"
   >
     <div
-      className="sc-jzJRlG dsDlAm"
+      className="sc-jzJRlG eiyKdN"
     />
     <div
-      className="sc-cSHVUG inMygV"
+      className="sc-cSHVUG daxtFw"
     />
     <div
-      className="sc-kAzzGY cPllvt"
+      className="sc-kAzzGY fsxurZ"
     />
     <div
-      className="sc-chPdSV UbQYY"
+      className="sc-chPdSV jnIXpQ"
     />
   </div>
   <div
-    className="sc-ifAKCX kuTWZI"
+    className="sc-ifAKCX eFhtF"
   >
     <div
-      className="sc-gqjmRU cZBFKU"
+      className="sc-gqjmRU bdGQUe"
     >
       <div
         className="sc-VigVT bjRZMr"
       >
         <ul
-          className="sc-htoDjs iOfqWF"
+          className="sc-htoDjs jcrppT"
         />
         <h2
-          className="sc-gZMcBi FOban"
+          className="sc-gZMcBi iyXkWF"
         >
           Test
         </h2>
@@ -46,31 +46,31 @@ exports[`Component: ProjectCard Should render successfully 1`] = `
         </div>
       </div>
       <div
-        className="sc-bZQynM fDfFdw"
+        className="sc-bZQynM gULfvi"
       >
         <a
-          className="sc-htpNat bsfifO"
+          className="sc-htpNat kReTet"
           href="Test"
         >
           <span
             className="sc-bwzfXH cbEDiN"
           >
             <h3
-              className="sc-bdVaJa bjYFto"
+              className="sc-bdVaJa iubVGX"
             >
               View Site
             </h3>
           </span>
         </a>
         <a
-          className="sc-htpNat bsfifO"
+          className="sc-htpNat kReTet"
           href="Test"
         >
           <span
             className="sc-bwzfXH cbEDiN"
           >
             <h3
-              className="sc-bdVaJa bjYFto"
+              className="sc-bdVaJa iubVGX"
             >
               View Code
             </h3>

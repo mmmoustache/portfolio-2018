@@ -4,8 +4,8 @@ import { Timings, Durations } from '../../utils/transitions';
 import { convertRemToPixels as rem } from '../../utils/utils';
 
 const size = {
-  small: '200px',
-  large: '300px',
+  small: `${rem('200px')}`,
+  large: `${rem('300px')}`,
 };
 
 export default styled.div`

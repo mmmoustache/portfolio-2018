@@ -28,9 +28,28 @@ class IndexPage extends React.Component {
     
     return (
       <React.Fragment>
-        <Intro loaded={loaded} navigation={data.allNavigationJson.edges[0].node.items} />
+        <Intro 
+          loaded={loaded} 
+          navigation={data.allNavigationJson.edges[0].node.items}
+          linkedIn={data.site.siteMetadata.linkedIn}
+          gitHub={data.site.siteMetadata.gitHub}
+        />
+
         <ProjectList items={data.allProjectsJson.edges[0].node.items} />
-        <TrackVisibility offset={-300} partialVisibility once>{({ isVisible }) => <About isVisible={isVisible} data={data.allAboutJson.edges[0].node} />}</TrackVisibility>
+    
+        <TrackVisibility 
+          offset={-300} 
+          partialVisibility 
+          once
+        >
+          {
+            ({ isVisible }) => 
+              <About
+                isVisible={isVisible} 
+                data={data.allAboutJson.edges[0].node} 
+              />
+          }
+        </TrackVisibility>
       </React.Fragment>
     );
   }
@@ -49,6 +68,12 @@ export default IndexPage;
 // eslint-disable-next-line
 export const query = graphql`
   query ProjectsQuery {
+    site {
+      siteMetadata {
+        linkedIn
+        gitHub
+      }
+    }
     allProjectsJson {
       edges {
         node {

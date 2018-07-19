@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Site Title',
-    description: 'Test description',
+    title: 'Jack Coventry | Front End Web Developer',
+    description: 'Online portfolio for Jack Coventry; a front end web developer based in Manchester',
+    linkedIn: 'https://www.linkedin.com/in/jack-coventry-713a8811',
+    gitHub: 'https://github.com/mmmoustache',
   },
   pathPrefix: "/portfolio-2018",
   plugins: [

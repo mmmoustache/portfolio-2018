@@ -6,19 +6,19 @@ exports[`Component: About Should render successfully 1`] = `
   id="about"
 >
   <div
-    className="sc-bZQynM ZDXVn"
+    className="sc-bZQynM fdYyUr"
   >
     <div
-      className="sc-bxivhb kxyYzK"
+      className="sc-bxivhb bsRDV"
     />
     <div
-      className="sc-ifAKCX fBYRJd"
+      className="sc-ifAKCX fotatZ"
     >
       <h3
-        className="sc-bwzfXH iyToRU"
+        className="sc-bwzfXH ejbyUv"
       />
       <h2
-        className="sc-bdVaJa cYcxd"
+        className="sc-bdVaJa kujZxV"
       />
       <div
         className="sc-htpNat fjAnuH"

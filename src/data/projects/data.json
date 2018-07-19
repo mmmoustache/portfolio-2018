@@ -16,8 +16,8 @@
     },
     {
       "id": 2,
-      "title": "React Starter Boilerplate",
-      "description": "This is an isomorphic, React boilerplate using Redux, Webpack, SCSS, ",
+      "title": "React Starter",
+      "description": "This is an isomorphic, React boilerplate using Redux, Webpack, CSS Modules",
       "image_url": "https://placecage.com/300/300",
       "technologies": [
         "Gatsby",

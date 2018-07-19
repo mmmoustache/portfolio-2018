@@ -2,8 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Footer from '../components/Footer';
+import SkipToMain from '../components/SkipToMain';
 import '../styles/fonts.css';
 import '../styles/global.css';
+
+function ServiceWorker() {
+  if (typeof window !== 'undefined') {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          // Registration was successful
+          console.info('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.error('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  }
+}
+
+ServiceWorker();
 
 const Layout = ({ children, data }) => (
   <React.Fragment>
@@ -14,9 +33,13 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <main>
+      <SkipToMain href="#work" title="skip to content">skip to content</SkipToMain>
       {children()}
     </main>
-    <Footer />
+    <Footer
+      linkedIn={data.site.siteMetadata.linkedIn}
+      gitHub={data.site.siteMetadata.gitHub}
+    />
   </React.Fragment>
 );
 
@@ -38,6 +61,8 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        linkedIn
+        gitHub
       }
     }
   }

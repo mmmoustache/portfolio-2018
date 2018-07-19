@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { isBrowser } from 'react-device-detect';
 import { Colours } from '../../../utils/colours';
 import { Timings, Durations } from '../../../utils/transitions';
 import { Border as BorderSettings } from '../../../utils/layouts';
+import { convertRemToPixels as rem } from '../../../utils/utils';
 
-const Padding = '20px';
-const Layout = '-5px';
-const LinkSpacing = '40px';
+const Padding = `${rem('20px')}`;
+const Layout = `-${rem('5px')}`;
+const LinkSpacing = `${rem('40px')}`;
 
 export default styled.div`
   padding: ${Padding};
@@ -31,11 +33,16 @@ export default styled.div`
       z-index: 1;
     }
     
-    &:focus,
-    &:hover {
-      &::before {
-        width: 100%;
-      }
+    ${
+      isBrowser && `
+        &:focus,
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+      
+      `
     }
 
     &:last-child {

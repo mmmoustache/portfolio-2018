@@ -26,7 +26,7 @@ const ProjectCard = ({ title, description, image_url, technologies, url, repo, i
           {
             technologies &&
               <TechWrapper>
-                { technologies.map(e => <TechItem key={e}><Subheading>{e}</Subheading></TechItem>) }
+                { technologies.map(e => <TechItem key={e}><Subheading>{e}.</Subheading></TechItem>) }
               </TechWrapper>
           }
           {

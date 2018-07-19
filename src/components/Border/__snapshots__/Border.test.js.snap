@@ -2,19 +2,19 @@
 
 exports[`Component: Border Should render successfully 1`] = `
 <div
-  className="sc-bdVaJa jLcSdP"
+  className="sc-bdVaJa heSRTb"
 >
   <div
-    className="sc-htpNat cmvZAJ"
+    className="sc-htpNat cUMhYB"
   />
   <div
-    className="sc-bxivhb gvqaUy"
+    className="sc-bxivhb liVTau"
   />
   <div
-    className="sc-ifAKCX eCXUVy"
+    className="sc-ifAKCX dxQHVU"
   />
   <div
-    className="sc-EHOje xMvAg"
+    className="sc-EHOje fvmGYK"
   />
 </div>
 `;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { isBrowser } from 'react-device-detect';
 import { Colours } from '../../../utils/colours';
 import { Timings, Durations } from '../../../utils/transitions';
+import { convertRemToPixels as rem } from '../../../utils/utils';
 
-const Height = '80px';
-const IconSize = '50px';
+const Height = `${rem('80px')}`;
+const IconSize = `${rem('50px')}`;
 
 const Link = styled.a`
   background: ${Colours.grey};
@@ -33,9 +35,13 @@ export const Github = Link.extend`
     background-image: url('./github.svg');
   }
 
-  &:focus,
-  &:hover {
-    background: ${Colours.gitHub};
+  ${
+    isBrowser && `
+      &:focus,
+      &:hover {
+        background: ${Colours.gitHub};
+      }    
+    `
   }
 `;
 
@@ -44,9 +50,13 @@ export const LinkedIn = Link.extend`
     background-image: url('./linkedin.svg');
   }
 
-  &:focus,
-  &:hover {
-    background: ${Colours.linkedIn};
+  ${
+    isBrowser && `
+      &:focus,
+      &:hover {
+        background: ${Colours.linkedIn};
+      }    
+    `
   }
 `;
 
