@@ -1,2 +1,2 @@
-webpackJsonp([60335399758886],{81:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Jack Coventry | Front End Web Developer",description:"Online portfolio for Jack Coventry; a front end web developer based in Manchester",linkedIn:"https://www.linkedin.com/in/jack-coventry-713a8811",gitHub:"https://github.com/mmmoustache"}}},layoutContext:{}}}});
+webpackJsonp([60335399758886],{102:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Jack Coventry | Front End Web Developer",description:"Online portfolio for Jack Coventry; a front end web developer based in Manchester",linkedIn:"https://www.linkedin.com/in/jack-coventry-713a8811",gitHub:"https://github.com/mmmoustache"}}},layoutContext:{}}}});
 //# sourceMappingURL=path----d8f6a9d8b95c4859d76e.js.map

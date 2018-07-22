@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{102:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Jack Coventry | Personal Portfolio | Front End Web Developer",description:"Personal portfolio site for Jack Coventry; a front end web developer based in Manchester",linkedIn:"https://www.linkedin.com/in/jack-coventry-713a8811",gitHub:"https://github.com/mmmoustache"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----5802a8c250eca44dd92e.js.map

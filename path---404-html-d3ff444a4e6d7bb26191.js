@@ -1,0 +1,2 @@
+webpackJsonp([0xa2868bfb69fc],{297:function(t,e){t.exports={data:{site:{siteMetadata:{linkedIn:"https://www.linkedin.com/in/jack-coventry-713a8811",gitHub:"https://github.com/mmmoustache"}},allNotFoundJson:{edges:[{node:{title:"Page not found!",text:["I'm afraid that page doesn't exist!"]}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---404-html-d3ff444a4e6d7bb26191.js.map
