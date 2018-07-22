@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Jack Coventry | Front End Web Developer',
-    description: 'Online portfolio for Jack Coventry; a front end web developer based in Manchester',
+    title: 'Jack Coventry | Personal Portfolio | Front End Web Developer',
+    description: 'Personal portfolio site for Jack Coventry; a front end web developer based in Manchester',
     linkedIn: 'https://www.linkedin.com/in/jack-coventry-713a8811',
     gitHub: 'https://github.com/mmmoustache',
   },
@@ -30,6 +30,20 @@ module.exports = {
       options: {
         name: 'navigation',
         path: `${__dirname}/src/data/navigation/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'offline',
+        path: `${__dirname}/src/data/offline/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'notFound',
+        path: `${__dirname}/src/data/notFound/`,
       },
     },
   ],

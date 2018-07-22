@@ -23,8 +23,18 @@
 
 body {
   color: #333;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, serif;
   margin: 0;
+}
+
+/**
+ * No-js fallback
+ */
+
+body:not(.js) * {
+  clip-path: none;
+  opacity: 1;
+  visibility: visible;
 }
 
 /**

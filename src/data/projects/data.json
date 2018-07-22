@@ -4,7 +4,6 @@
       "id": 1,
       "title": "Cityboard",
       "description": "Cityboard is a React application that searches local restaurants, arts and activities using the Yelp Businesses API and Google Firebase.",
-      "image_url": "https://placecage.com/300/300",
       "technologies": [
         "React",
         "Redux",
@@ -16,17 +15,41 @@
     },
     {
       "id": 2,
-      "title": "React Starter",
-      "description": "This is an isomorphic, React boilerplate using Redux, Webpack, CSS Modules",
-      "image_url": "https://placecage.com/300/300",
+      "title": "Jack Coventry Portfolio Site",
+      "description": "Portfolio site to showcase various personal projects.",
       "technologies": [
         "Gatsby",
         "React",
         "Styled Components",
         "GraphQL"
       ],
+      "url": "",
+      "repo": "https://github.com/mmmoustache/react-starter"
+    },
+    {
+      "id": 3,
+      "title": "React Starter",
+      "description": "This is an isomorphic, React boilerplate using Redux, Webpack and CSS Modules",
+      "technologies": [
+        "React",
+        "CSS Modules",
+        "GraphQL"
+      ],
+      "url": "https://github.com/mmmoustache/react-starter",
+      "repo": "https://github.com/mmmoustache/react-starter"
+    },
+    {
+      "id": 4,
+      "title": "Contentful Blog Starter",
+      "description": "Using my own React Starter, this boilerplate project is powered by the Contentful CMS",
+      "technologies": [
+        "React",
+        "CSS Modules",
+        "Contentful"
+      ],
       "url": "https://github.com/mmmoustache/react-starter",
       "repo": "https://github.com/mmmoustache/react-starter"
     }
   ]
 }
+

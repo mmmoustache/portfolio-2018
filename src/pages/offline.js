@@ -1,9 +1,56 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import TrackVisibility from 'react-on-screen';
+import Text from '../components/TextSection';
 
-const OfflinePage = () => (
-  <div>
-    <h1>OFFLINE</h1>
-  </div>
-);
+class OfflinePageComponent extends React.Component {
+  render() {
+    const { data } = this.props;
+    
+    return (
+      <React.Fragment>
+        <TrackVisibility 
+          once
+        >
+          {
+            ({ isVisible }) => 
+              <Text
+                isVisible={isVisible} 
+                data={data.allOfflineJson.edges[0].node} 
+              />
+          }
+        </TrackVisibility>
+      </React.Fragment>
+    );
+  }
+}
 
-export default OfflinePage;
+OfflinePageComponent.propTypes = {
+  data: PropTypes.object,
+};
+
+OfflinePageComponent.defaultProps = {
+  data: undefined,
+};
+
+export default OfflinePageComponent;
+
+// eslint-disable-next-line
+export const query = graphql`
+  query OfflineQuery {
+    site {
+      siteMetadata {
+        linkedIn
+        gitHub
+      }
+    }
+    allOfflineJson {
+      edges {
+        node {
+          title
+          text
+        }
+      }
+    }
+  }
+`;

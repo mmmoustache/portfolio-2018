@@ -82,7 +82,6 @@ export const query = graphql`
             id
             description
             technologies
-            image_url
             url
             repo
           }

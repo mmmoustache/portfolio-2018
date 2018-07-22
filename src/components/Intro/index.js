@@ -13,7 +13,7 @@ import { Wrapper as BorderWrapper, Border1 as B1, Border2 as B2, Border3 as B3, 
 
 const Intro = ({ loaded, navigation, linkedIn, gitHub }) => (
   <Wrapper loaded={loaded}>
-    <BorderWrapper mobileCentered>
+    <BorderWrapper showOnMobile>
       <B1 isVisible={loaded} altColour />
       <B2 isVisible={loaded} altColour />
       <B3 isVisible={loaded} altColour />

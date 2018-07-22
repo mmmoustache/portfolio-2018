@@ -3,9 +3,8 @@ import { Colours } from '../../utils/colours';
 import { Timings } from '../../utils/transitions';
 import { Border as BorderSettings } from '../../utils/layouts';
 import { Breakpoints } from '../../utils/breakpoints';
-import { convertRemToPixels as rem } from '../../utils/utils';
 
-const WrapperSizeMobile = '25vh';
+const WrapperSizeMobile = '40vh';
 const WrapperSize = '50vh';
 const Transition = '0.3s';
 
@@ -20,12 +19,13 @@ export const Wrapper = styled.div`
   z-index: 0;
 
   ${
-    props => !props.mobileCentered && `
-      top: -${rem('70px')};
+    props => !props.showOnMobile && `
+      display: none;
     `
   }
 
   @media ${Breakpoints.medium} {
+    display: block;
     height: ${WrapperSize};
     top: 50%;
     width: ${WrapperSize};
@@ -59,7 +59,7 @@ export const Border1 = Border.extend`
 `;
 
 export const Border2 = Border.extend`
-  height: 0%;
+  height: 0;
   right: 0;
   top: 0;
   transition: height  ${Transition} ${Timings.default};

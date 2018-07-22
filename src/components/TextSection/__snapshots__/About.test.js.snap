@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: About Should render successfully 1`] = `
+<div
+  className="sc-EHOje hGGpUi"
+  id="about"
+>
+  <div
+    className="sc-bZQynM fdYyUr"
+  >
+    <div
+      className="sc-bxivhb bsRDV"
+    />
+    <div
+      className="sc-ifAKCX fotatZ"
+    >
+      <h3
+        className="sc-bwzfXH ejbyUv"
+      />
+      <h2
+        className="sc-bdVaJa kujZxV"
+      />
+      <div
+        className="sc-htpNat fjAnuH"
+      />
+    </div>
+  </div>
+</div>
+`;

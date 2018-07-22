@@ -39,7 +39,7 @@ const ProjectCard = ({ title, description, image_url, technologies, url, repo, i
               </Text>
           }
         </ContentInner>
-        <Buttons>
+        <Buttons multiple={url && repo}>
           { url && <Button href={url}>View Site</Button> }
           { repo && <Button href={repo}>View Code</Button> }
         </Buttons>
